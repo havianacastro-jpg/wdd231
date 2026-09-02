@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Course Home Page</title>
+    <meta name="description" content="Página de inicio del curso WDD231 - Web Frontend Development II">
+    <meta name="author" content="Tu Nombre">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript files with defer -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <!-- Ejemplo de logo SVG inline o imagen -->
+            <svg viewBox="0 0 24 24" width="30" height="30" aria-label="Logo">
+                <path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span>Tu Nombre</span>
+        </div>
+        <button id="menu-button" aria-label="Menú de navegación">&#9776;</button>
+        <nav id="animate-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="card">
+            <h2>Acerca de mí</h2>
+            <p>Aquí puedes escribir una breve biografía sobre ti, tus metas profesionales y tu experiencia en desarrollo web.</p>
+        </section>
+
+        <section class="card">
+            <h2>Certificado Web and Computer Programming</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
+
+        <section class="card">
+            <h2>Localización</h2>
+            <p>Tu Ciudad, Tu País/Estado</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Tu Nombre - Tu País</p>
+        <p>Última modificación: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
