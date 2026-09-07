@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory - Cámara de Comercio de Ciudad de México</title>
-    <meta name="description" content="Directorio de empresas y miembros de la Cámara de Comercio.">
+    <title>WDD 231 - Hagot Coriantumr Viana Castro</title>
+    <meta name="description" content="Página de inicio principal para el curso WDD 231 Web Frontend Development.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
     
-    <meta property="og:title" content="Chamber Directory - WDD231">
-    <meta property="og:description" content="Directorio oficial de negocios locales asociados.">
-    <meta property="og:image" content="https://tu-usuario.github.io/wdd231/chamber/images/logo.svg">
-    <meta property="og:url" content="https://tu-usuario.github.io/wdd231/chamber/directory.html">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="WDD 231 - Home">
+    <meta property="og:description" content="Portafolio y proyectos de desarrollo web frontend de Hagot Coriantumr Viana Castro.">
+    <meta property="og:image" content="https://havianacastro-jpg.github.io/wdd231/images/logo.svg">
+    <meta property="og:url" content="https://havianacastro-jpg.github.io/wdd231/index.html">
 
-    <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,39 +23,43 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
     
-    <script src="../scripts/navigation.js" defer></script>
-    <script src="../scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-box">
-            <img src="../images/logo.svg" alt="Logo de WDD231" width="32" height="32">
+            <img src="images/logo.svg" alt="Logo de WDD231" width="32" height="32">
             <span>Hagot Castro</span>
         </div>
         <button id="menu-button" aria-label="Menú de navegación">&#9776;</button>
         <nav id="animate-nav">
-            <a href="../index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href="#">Join</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/directory.html">Directory</a>
+            <a href="#">Site Plan</a>
         </nav>
     </header>
 
     <main>
-        <h1>Member Directory</h1>
+        <h1>WDD 231: Web Frontend Development</h1>
         
-        <div class="view-toggle">
-            <button id="grid" class="active" title="Vista de cuadrícula">Grid</button>
-            <button id="list" title="Vista de lista">List</button>
-        </div>
+        <section class="card">
+            <h2>Acerca de mí</h2>
+            <p>Hola, mi nombre es Hagot Coriantumr Viana Castro, radico en Ciudad de México, México. Estudio desarrollo web y programación.</p>
+        </section>
 
-        <div id="members-container" class="grid"></div>
+        <section class="card">
+            <h2>Proyectos del Curso</h2>
+            <ul>
+                <li><a href="chamber/directory.html">Chamber of Commerce Directory Project</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <div class="social-icons">
-            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/havianacastro-jpg" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/havianacastro-jpg" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - México</p>
         <p>Última modificación: <span id="lastModified"></span></p>
