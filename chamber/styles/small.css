@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #ffcc00;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a.active, nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.view-toggle button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.grid img {
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.list section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    margin: 0;
+    flex: 2;
+}
+
+.list section p, .list section a {
+    margin: 0;
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer .social-icons {
+    margin-bottom: 0.5rem;
+}
+
+footer .social-icons a {
+    color: var(--secondary-color);
+    margin: 0 10px;
+    text-decoration: none;
+}

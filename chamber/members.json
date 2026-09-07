@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tech Solutions CDMX",
+    "address": "Av. Insurgentes Sur 123, Ciudad de México",
+    "phone": "+52 55 1234 5678",
+    "website": "https://www.techsolutions.com",
+    "image": "tech.jpeg",
+    "membership": 3,
+    "description": "Desarrollo de software y consultoría tecnológica avanzada."
+  },
+  {
+    "name": "Café Tradición Mexicana",
+    "address": "Calle Madero 45, Centro Histórico, Ciudad de México",
+    "phone": "+52 55 8765 4321",
+    "website": "https://www.cafetradicion.com",
+    "image": "cafe.jpg",
+    "membership": 2,
+    "description": "Café de origen mexicano y panadería artesanal."
+  },
+  {
+    "name": "Gimnasio Urbano Fitness",
+    "address": "Paseo de la Reforma 200, Ciudad de México",
+    "phone": "+52 55 5555 4444",
+    "website": "https://www.urbanofitness.com",
+    "image": "fitness.jpeg",
+    "membership": 1,
+    "description": "Centro de acondicionamiento físico abierto las 24 horas."
+  },
+  {
+    "name": "Constructora e Inmobiliaria del Valle",
+    "address": "Blvd. Manuel Ávila Camacho 500, Ciudad de México",
+    "phone": "+52 55 3333 2222",
+    "website": "https://www.inmobiliariadelvalle.com",
+    "image": "construction.jpeg",
+    "membership": 3,
+    "description": "Proyectos de construcción residencial y comercial."
+  },
+  {
+    "name": "Logística y Transportes México",
+    "address": "Eje Central Lázaro Cárdenas 100, Ciudad de México",
+    "phone": "+52 55 9999 8888",
+    "website": "https://www.logisticamexico.com",
+    "image": "logistics.jpeg",
+    "membership": 2,
+    "description": "Servicios de carga, envíos y cadena de suministro."
+  },
+  {
+    "name": "Librería y Arte Contemporáneo",
+    "address": "Roma Norte, Álvaro Obregón, Ciudad de México",
+    "phone": "+52 55 7777 6666",
+    "website": "https://www.libreriayarte.com",
+    "image": "bookstore.jpeg",
+    "membership": 1,
+    "description": "Espacio cultural, libros independientes y eventos de lectura."
+  },
+  {
+    "name": "Energía Solar y Sustentabilidad",
+    "address": "Polanco, Miguel Hidalgo, Ciudad de México",
+    "phone": "+52 55 1111 0000",
+    "website": "https://www.energiasolarmx.com",
+    "image": "solar.jpeg",
+    "membership": 3,
+    "description": "Instalación y diseño de sistemas de paneles solares."
+  }
+]

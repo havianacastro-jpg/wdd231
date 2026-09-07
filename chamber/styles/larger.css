@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav a {
+        display: inline-block;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        margin-left: 10px;
+        border-radius: 4px;
+    }
+}
