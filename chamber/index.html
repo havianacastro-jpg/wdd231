@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cámara de Comercio de Ciudad de México - Inicio</title>
+    <meta name="description" content="Página de inicio de la Cámara de Comercio de Ciudad de México. Conoce nuestros eventos, clima local y empresas destacadas.">
+    <meta name="author" content="Hagot Coriantumr Viana Castro">
+    <meta property="og:title" content="Cámara de Comercio - Home">
+    <meta property="og:description" content="Página oficial de inicio de la Cámara de Comercio de Ciudad de México.">
+    <meta property="og:image" content="https://havianacastro-jpg.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://havianacastro-jpg.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="../images/logo.svg" alt="Logo de WDD231" width="32" height="32">
+            <span>Hagot Castro</span>
+        </div>
+        <button id="menu-button" aria-label="Menú de navegación">&#9776;</button>
+        <nav id="animate-nav">
+            <a href="../index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Vista panorámica de Ciudad de México" width="1200" height="600">
+            <div class="hero-msg">
+                <h1>Conectando Negocios en CDMX</h1>
+                <a href="#" class="cta-button">Únete a la Cámara</a>
+            </div>
+        </section>
+
+        <div class="grid-container">
+            <section class="card events-card">
+                <h2>Eventos Actuales</h2>
+                <ul>
+                    <li><strong>Feria PyME 2026:</strong> Exposición de negocios locales este viernes.</li>
+                    <li><strong>Conferencia Magistral:</strong> Transformación digital para empresas.</li>
+                </ul>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Clima Actual</h2>
+                <div id="current-weather">
+                    <img id="weather-icon" src="" alt="Icono del clima">
+                    <p><span id="current-temp">--</span>°C - <span id="weather-desc">Cargando...</span></p>
+                </div>
+                <h3>Pronóstico (3 días)</h3>
+                <ul id="forecast-list">
+                    <li>Cargando pronóstico...</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="spotlights-container">
+            <h2>Empresas Destacadas</h2>
+            <div id="spotlights" class="spotlight-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/havianacastro-jpg" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/havianacastro-jpg" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - México</p>
+        <p>Última modificación: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
