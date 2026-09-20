@@ -1,35 +1,47 @@
+.join-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.join-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1a365d;
+}
+
 .join-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 1rem;
 }
 
 @media (min-width: 768px) {
     .join-container {
-        flex-direction: row;
-        align-items: flex-start;
+        grid-template-columns: 1.5fr 1fr;
     }
-    .join-form {
-        flex: 1.5;
-    }
-    .cards-container {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+}
+
+.join-form {
+    background: #fdfdfd;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .join-form label {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
 }
 
 .join-form label span {
     display: block;
-    font-weight: bold;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
+    color: #2d3748;
 }
 
 .join-form input[type="text"],
@@ -37,65 +49,172 @@
 .join-form input[type="tel"],
 .join-form textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 1rem;
     box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.join-form input:user-invalid,
+.join-form input:focus:invalid {
+    border-color: #e53e3e;
 }
 
 .membership-level {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.membership-level legend {
+    font-weight: bold;
+    color: #2d3748;
+    padding: 0 0.5rem;
 }
 
 .radio-label {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    margin-top: 0.25rem;
 }
 
 .submit-btn {
-    padding: 0.75rem 1.5rem;
-    background-color: #0056b3;
+    width: 100%;
+    background-color: #2b6cb0;
     color: white;
     border: none;
+    padding: 0.85rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    transition: background-color 0.2s ease;
 }
 
-@keyframes slideFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.submit-btn:hover {
+    background-color: #2c5282;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-container h2 {
+    font-size: 1.5rem;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+}
+
+.membership-card {
+    background: #f7fafc;
+    border-left: 4px solid #2b6cb0;
+    padding: 1.25rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.info-link {
+    background: transparent;
+    color: #2b6cb0;
+    border: 1px solid #2b6cb0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.info-link:hover {
+    background: #2b6cb0;
+    color: white;
+}
+
+.membership-modal {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.membership-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.membership-modal h3 {
+    margin-top: 0;
+    color: #1a365d;
+}
+
+.close-modal {
+    margin-top: 1rem;
+    background: #e2e8f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.close-modal:hover {
+    background: #cbd5e0;
+}
+
+.thank-you-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.thank-you-container li {
+    background: #f7fafc;
+    margin-bottom: 0.5rem;
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .animated-card {
-    opacity: 0;
-    animation: slideFadeIn 0.6s ease-out forwards;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 4px;
+    animation: fadeIn 0.4s ease forwards;
 }
 
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
-
-dialog.membership-modal {
-    padding: 2rem;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-dialog.membership-modal::backdrop {
-    background: rgba(0,0,0,0.5);
-}

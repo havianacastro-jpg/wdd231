@@ -1,23 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Assign current timestamp to hidden field
     const timestampField = document.getElementById('timestamp');
     if (timestampField) {
-        timestampField.value = new Date().toLocaleString();
+        timestampField.value = new Date().toISOString();
     }
 
-    const infoButtons = document.querySelectorAll('.info-link');
-    infoButtons.forEach(button => {
+    // Modal handling using <dialog> element
+    const infoLinks = document.querySelectorAll('.info-link');
+    infoLinks.forEach(button => {
         button.addEventListener('click', () => {
-            const modalId = button.getAttribute('data-target');
-            const dialog = document.getElementById(modalId);
-            if (dialog) dialog.showModal();
+            const targetId = button.getAttribute('data-target');
+            const dialog = document.getElementById(targetId);
+            if (dialog) {
+                dialog.showModal();
+            }
         });
     });
 
     const closeButtons = document.querySelectorAll('.close-modal');
-    closeButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const dialog = btn.closest('dialog');
-            if (dialog) dialog.close();
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const dialog = button.closest('dialog');
+            if (dialog) {
+                dialog.close();
+            }
         });
     });
 });

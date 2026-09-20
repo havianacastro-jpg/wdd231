@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cámara de Comercio de Ciudad de México - Unirse</title>
-    <meta name="description" content="Formulario de afiliación a la Cámara de Comercio de Ciudad de México. Conecta tu organización.">
+    <title>Join - Mexico City Chamber of Commerce</title>
+    <meta name="description" content="Membership application form for the Mexico City Chamber of Commerce. Connect your organization.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Cámara de Comercio de Ciudad de México - Unirse">
-    <meta property="og:description" content="Formulario de afiliación a la Cámara de Comercio de Ciudad de México. Conecta tu organización.">
+    <meta property="og:title" content="Join - Mexico City Chamber of Commerce">
+    <meta property="og:description" content="Membership application form for the Mexico City Chamber of Commerce. Connect your organization.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://havianacastro-jpg.github.io/wdd231/chamber/join.html">
-    <meta property="og:image" content="https://havianacastro-jpg.github.io/images/logo.svg">
+    <meta property="og:image" content="https://havianacastro-jpg.github.io/wdd231/images/logo.svg">
 
     <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,10 +29,10 @@
 <body>
     <header>
         <div class="logo-box">
-            <img src="../images/logo.svg" alt="Logo de WDD231" width="32" height="32">
+            <img src="../images/logo.svg" alt="WDD231 Logo" width="32" height="32">
             <span>Hagot Castro</span>
         </div>
-        <button id="menu-button" aria-label="Menú de navegación">&#9776;</button>
+        <button id="menu-button" aria-label="Navigation Menu">&#9776;</button>
         <nav id="animate-nav">
             <a href="../index.html">Home</a>
             <a href="directory.html">Directory</a>
@@ -41,109 +41,110 @@
     </header>
 
     <main class="join-main">
-        <h1>Formulario de Afiliación</h1>
+        <h1>Membership Application</h1>
         <div class="join-container">
             <form method="get" action="thankyou.html" class="join-form">
                 <input type="hidden" name="timestamp" id="timestamp">
                 
                 <label>
-                    <span>Nombre *</span>
-                    <input type="text" name="fname" title="Ingrese su nombre" autocomplete="given-name" required>
+                    <span>First Name *</span>
+                    <input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required>
                 </label>
 
                 <label>
-                    <span>Apellido *</span>
-                    <input type="text" name="lname" title="Ingrese su apellido" autocomplete="family-name" required>
+                    <span>Last Name *</span>
+                    <input type="text" name="lname" title="Enter your last name" autocomplete="family-name" required>
                 </label>
 
                 <label>
-                    <span>Título / Cargo en la organización</span>
-                    <input type="text" name="orgtitle" title="Cargo (mínimo 7 caracteres alfabéticos, guiones o espacios)" autocomplete="organization-title" pattern="^[a-zA-Z\s-]{7,}$" placeholder="Ej. Director General">
+                    <span>Organizational Title</span>
+                    <input type="text" name="orgtitle" title="Title (minimum 7 alphabetic characters, hyphens or spaces)" autocomplete="organization-title" pattern="^[a-zA-Z\s-]{7,}$" placeholder="Ex. General Director">
                 </label>
 
                 <label>
-                    <span>Correo electrónico *</span>
-                    <input type="email" name="email" title="Ingrese su correo electrónico" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                    <span>Email *</span>
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
                 </label>
 
                 <label>
-                    <span>Teléfono móvil *</span>
-                    <input type="tel" name="phone" title="Ingrese su teléfono móvil" autocomplete="tel" placeholder="+52 55 1234 5678" required>
+                    <span>Mobile Phone *</span>
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" placeholder="+52 55 1234 5678" required>
                 </label>
 
                 <label>
-                    <span>Nombre de la empresa / organización *</span>
-                    <input type="text" name="organization" title="Nombre de su organización" autocomplete="organization" required>
+                    <span>Organization Name *</span>
+                    <input type="text" name="organization" title="Enter your organization name" autocomplete="organization" required>
                 </label>
 
                 <fieldset class="membership-level">
-                    <legend>Nivel de Membresía *</legend>
+                    <legend>Membership Level *</legend>
                     <label class="radio-label">
                         <input type="radio" name="membership" value="np" required>
-                        <span><strong>NP Membership:</strong> Sin fines de lucro (sin costo)</span>
+                        <span><strong>NP Membership:</strong> Nonprofit (no fee)</span>
                     </label>
                     <label class="radio-label">
                         <input type="radio" name="membership" value="bronze">
-                        <span><strong>Bronze Membership:</strong> Nivel básico</span>
+                        <span><strong>Bronze Membership:</strong> Basic tier</span>
                     </label>
                     <label class="radio-label">
                         <input type="radio" name="membership" value="silver">
-                        <span><strong>Silver Membership:</strong> Nivel intermedio</span>
+                        <span><strong>Silver Membership:</strong> Intermediate tier</span>
                     </label>
                     <label class="radio-label">
                         <input type="radio" name="membership" value="gold">
-                        <span><strong>Gold Membership:</strong> Nivel premium</span>
+                        <span><strong>Gold Membership:</strong> Premium tier</span>
                     </label>
                 </fieldset>
 
                 <label>
-                    <span>Descripción de la empresa / organización</span>
-                    <textarea name="description" title="Descripción breve de su negocio" rows="4"></textarea>
+                    <span>Organization Description</span>
+                    <textarea name="description" title="Brief description of your business" rows="4"></textarea>
                 </label>
 
-                <input type="submit" value="Enviar Solicitud de Afiliación" class="submit-btn">
+                <input type="submit" value="Submit Application" class="submit-btn">
             </form>
 
             <aside class="cards-container">
+                <h2>Membership Levels</h2>
                 <div class="membership-card animated-card delay-1">
                     <h3>NP Membership</h3>
-                    <button type="button" class="info-link" data-target="modal-np">Ver Beneficios</button>
+                    <button type="button" class="info-link" data-target="modal-np">View Benefits</button>
                 </div>
                 <div class="membership-card animated-card delay-2">
                     <h3>Bronze Membership</h3>
-                    <button type="button" class="info-link" data-target="modal-bronze">Ver Beneficios</button>
+                    <button type="button" class="info-link" data-target="modal-bronze">View Benefits</button>
                 </div>
                 <div class="membership-card animated-card delay-3">
                     <h3>Silver Membership</h3>
-                    <button type="button" class="info-link" data-target="modal-silver">Ver Beneficios</button>
+                    <button type="button" class="info-link" data-target="modal-silver">View Benefits</button>
                 </div>
                 <div class="membership-card animated-card delay-4">
                     <h3>Gold Membership</h3>
-                    <button type="button" class="info-link" data-target="modal-gold">Ver Beneficios</button>
+                    <button type="button" class="info-link" data-target="modal-gold">View Benefits</button>
                 </div>
             </aside>
         </div>
 
-        <!-- Modales HTML -->
+        <!-- HTML Dialog Modals -->
         <dialog id="modal-np" class="membership-modal">
-            <h3>Beneficios: NP Membership</h3>
-            <p>Acceso a eventos sin fines de lucro, directorio básico y boletín informativo.</p>
-            <button class="close-modal" type="button">Cerrar</button>
+            <h3>Benefits: NP Membership</h3>
+            <p>Access to nonprofit events, basic directory listing, and newsletter.</p>
+            <button class="close-modal" type="button">Close</button>
         </dialog>
         <dialog id="modal-bronze" class="membership-modal">
-            <h3>Beneficios: Bronze Membership</h3>
-            <p>Directorio destacado, descuentos en talleres y eventos de networking.</p>
-            <button class="close-modal" type="button">Cerrar</button>
+            <h3>Benefits: Bronze Membership</h3>
+            <p>Featured directory listing, workshop discounts, and networking events.</p>
+            <button class="close-modal" type="button">Close</button>
         </dialog>
         <dialog id="modal-silver" class="membership-modal">
-            <h3>Beneficios: Silver Membership</h3>
-            <p>Mayor prioridad en directorios, descuentos especiales y capacitación exclusiva.</p>
-            <button class="close-modal" type="button">Cerrar</button>
+            <h3>Benefits: Silver Membership</h3>
+            <p>Higher directory priority, special discounts, and exclusive training.</p>
+            <button class="close-modal" type="button">Close</button>
         </dialog>
         <dialog id="modal-gold" class="membership-modal">
-            <h3>Beneficios: Gold Membership</h3>
-            <p>Posición de spotlight en la página de inicio, máxima visibilidad y pases VIP.</p>
-            <button class="close-modal" type="button">Cerrar</button>
+            <h3>Benefits: Gold Membership</h3>
+            <p>Homepage spotlight position, maximum visibility, and VIP passes.</p>
+            <button class="close-modal" type="button">Close</button>
         </dialog>
     </main>
 
@@ -152,8 +153,8 @@
             <a href="https://github.com/havianacastro-jpg" target="_blank" rel="noopener">GitHub</a>
             <a href="https://linkedin.com/in/havianacastro-jpg" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-        <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - México</p>
-        <p>Última modificación: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
