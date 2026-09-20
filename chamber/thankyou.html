@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por unirse - Cámara de Comercio</title>
+    <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('res-fname').textContent = params.get('fname') || '-';
+            document.getElementById('res-lname').textContent = params.get('lname') || '-';
+            document.getElementById('res-email').textContent = params.get('email') || '-';
+            document.getElementById('res-phone').textContent = params.get('phone') || '-';
+            document.getElementById('res-org').textContent = params.get('organization') || '-';
+            document.getElementById('res-time').textContent = params.get('timestamp') || '-';
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="../images/logo.svg" alt="Logo" width="32" height="32">
+            <span>Hagot Castro</span>
+        </div>
+        <button id="menu-button">&#9776;</button>
+        <nav id="animate-nav">
+            <a href="../index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main class="thankyou-main" style="padding: 2rem;">
+        <h1>¡Gracias por tu solicitud de afiliación!</h1>
+        <p>Hemos registrado los datos de tu organización exitosamente:</p>
+        <ul style="line-height: 1.8; list-style-type: disc;">
+            <li><strong>Nombre:</strong> <span id="res-fname"></span> <span id="res-lname"></span></li>
+            <li><strong>Correo electrónico:</strong> <span id="res-email"></span></li>
+            <li><strong>Teléfono móvil:</strong> <span id="res-phone"></span></li>
+            <li><strong>Organización:</strong> <span id="res-org"></span></li>
+            <li><strong>Fecha y hora de registro:</strong> <span id="res-time"></span></li>
+        </ul>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/havianacastro-jpg" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/havianacastro-jpg" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - México</p>
+        <p>Última modificación: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
