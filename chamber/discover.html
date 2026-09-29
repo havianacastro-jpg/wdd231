@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Mexico City Chamber of Commerce</title>
+    <meta name="description" content="Discover attractions, demographics, and cultural features of Mexico City for chamber members and visitors.">
+    <meta name="author" content="Hagot Coriantumr Viana Castro">
+    
+    <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/discover.css">
+    
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="../images/logo.svg" alt="WDD231 Logo" width="32" height="32">
+            <span>Hagot Castro</span>
+        </div>
+        <button id="menu-button" aria-label="Navigation Menu">&#9776;</button>
+        <nav id="animate-nav">
+            <a href="../index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html" class="active">Discover</a>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Mexico City</h1>
+        
+        <!-- Visitor Message Banner -->
+        <div id="visitor-message" class="visitor-banner"></div>
+
+        <!-- Grid Container with Template Areas -->
+        <section id="discover-grid" class="discover-grid">
+            <!-- Cards will be dynamically inserted here via JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/havianacastro-jpg" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/havianacastro-jpg" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Hagot Coriantumr Viana Castro - Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
