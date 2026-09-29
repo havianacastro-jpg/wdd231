@@ -7,6 +7,12 @@
     <meta name="description" content="Discover attractions, demographics, and cultural features of Mexico City for chamber members and visitors.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
     
+    <!-- Open Graph Meta Tags for Social Media & Validation -->
+    <meta property="og:title" content="Discover Attractions and Culture in Mexico City">
+    <meta property="og:description" content="Explore cultural landmarks, historic sites, and key attractions of Mexico City for chamber members and visitors on our official discover page.">
+    <meta property="og:image" content="https://havianacastro-jpg.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://havianacastro-jpg.github.io/wdd231/chamber/discover.html">
+
     <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +24,8 @@
     
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
-    <script src="scripts/discover.js" type="module" defer></script>
+    <!-- Corregido: Se removió 'defer' porque type="module" no lo permite -->
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -41,10 +48,10 @@
         <!-- Visitor Message Banner -->
         <div id="visitor-message" class="visitor-banner"></div>
 
-        <!-- Grid Container with Template Areas -->
-        <section id="discover-grid" class="discover-grid">
+        <!-- Corregido: Se cambió <section> por <div> para evitar la advertencia de sección sin heading -->
+        <div id="discover-grid" class="discover-grid">
             <!-- Cards will be dynamically inserted here via JS -->
-        </section>
+        </div>
     </main>
 
     <footer>
